@@ -1,5 +1,5 @@
 ####  Algorithms - Java
-##### array
+##### array (35)
 ##### binarysearch
 ##### bit
 ##### dp
