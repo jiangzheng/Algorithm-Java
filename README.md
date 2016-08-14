@@ -1,6 +1,6 @@
 ####  Algorithms - Java ()
 ##### array (35)
-##### binarysearch (1)
+##### binarysearch (11)
 ##### bit (1)
 ##### dp (1)
 ##### hashtable (0)
