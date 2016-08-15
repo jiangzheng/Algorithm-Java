@@ -41,12 +41,3 @@ public class MaximumProductSubarray_E152M_I191M {
  * Find the contiguous subarray within an array (containing at least one number) which has the largest product.
  * For example, given the array [2,3,-2,4], the contiguous subarray [2,3] has the largest product = 6.
  */
-
-/**
- * Let f(i) be the largest product of the subarray ending at A[i].
- * Let g(i) be the smallest product of the subarray ending at A[i].
- * f(i) = max{f(i - 1) * A[i], A[i], g(i - 1) * A[i]}
- * g(i) = min{f(i - 1) * A[i], A[i], g(i - 1) * A[i]}
- * Use maxProd and minProd to store f(i) and g(i) at each i, respectively.
- * Use max and min to store the largest f(i) and the smallest g(i), respectively.
- */
