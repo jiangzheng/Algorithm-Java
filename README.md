@@ -4,7 +4,7 @@
 ##### bit (12)
 ##### dp (14)
 ##### hashtable (0)
-##### linkedlist (1)
+##### linkedlist (18)
 ##### math (1)
 ##### misc (1)
 ##### regex (1)
