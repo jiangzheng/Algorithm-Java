@@ -6,7 +6,7 @@
 ##### hashtable (0)
 ##### linkedlist (18)
 ##### math (23)
-##### misc (1)
+##### misc (8)
 ##### regex (1)
 ##### string (1)
 ##### tree (1)
