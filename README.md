@@ -7,6 +7,6 @@
 ##### linkedlist (18)
 ##### math (23)
 ##### misc (8)
-##### regex (1)
+##### regex (3)
 ##### string (1)
 ##### tree (1)
