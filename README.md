@@ -5,7 +5,7 @@
 ##### dp (14)
 ##### hashtable (0)
 ##### linkedlist (18)
-##### math (1)
+##### math (23)
 ##### misc (1)
 ##### regex (1)
 ##### string (1)
