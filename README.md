@@ -8,5 +8,5 @@
 ##### math (23)
 ##### misc (8)
 ##### regex (3)
-##### string (30)
+##### string (37)
 ##### tree (35)
