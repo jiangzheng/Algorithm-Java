@@ -65,13 +65,13 @@ public class BinaryTreeInorderTraversal_E94M_I67E {
 		n4.left = n3; n4.right = n5; n9.left = n8;
 		TreeNode.printBinaryTree(n6);
 		/**
-		 *		6
-		 *	┌───┴───┐
-		 *	2	   7
-		 *  ┌─┴─┐	 └─┐
-		 *  1   4	   9
-		 *	 ┌┴┐	 ┌┘
-		 *	 3 5	 8
+		 *        6
+		 *    ┌───┴───┐
+		 *    2       7
+		 *  ┌─┴─┐     └─┐
+		 *  1   4       9
+		 *     ┌┴┐     ┌┘
+		 *     3 5     8
 		 */
 		
 		BinaryTreeInorderTraversal_E94M_I67E obj = new BinaryTreeInorderTraversal_E94M_I67E();
@@ -95,73 +95,3 @@ public class BinaryTreeInorderTraversal_E94M_I67E {
  * 3
  * Note: Recursive solution is trivial, could you do it iteratively?
  */
-
-
-/**
- * Use a Stack: 
- * 先找最左节点，然后一层层往上返回，每返回一层节点，要进入其右子树遍历（重复该过程）。
- * 注意：程序结构和pre-order几乎是一致的，仅是 list.add(curr.val) 的位置不同。
- * left-root-right
- * Time: O(n); Space: O(n) 
- */
-/*
-public List<Integer> inorderTraversal3(TreeNode root) {
-	List<Integer> list = new ArrayList<>();
-	if (root == null)
-		return list;
-	
-	Stack<TreeNode> stack = new Stack<>();
-	TreeNode curr = root;	// pointer
-	
-	while (curr != null) {	// find leftmost node
-		stack.push(curr);		// push all nodes in the path into the stack
-		curr = curr.left;		// move pointer to the left child
-	}
-	
-	while (!stack.isEmpty()) {	// until the stack is empty
-		curr = stack.pop();			// pop out nodes in the path in reversed order
-		list.add(curr.val);			// left-root-right
-		curr = curr.right;			// move pointer to the right child
-		while (curr != null) {	// find leftmost node
-			stack.push(curr);		// push all nodes in the path into the stack
-			curr = curr.left;		// move pointer to the left child
-		}
-	}
-	
-	return list;
-}
-*/
-
-/**
- * Morris Inorder Traversal: 
- * 改变Tree的结构，将node下最右节点连接node的parent，这样可以自动返回上层。
- * https://en.wikipedia.org/wiki/Threaded_binary_tree
- * Time: O(n); Space: O(1)
- */
-/*
-public List<Integer> inorderTraversal4(TreeNode root) {
-	List<Integer> list = new ArrayList<>();
-	TreeNode curr = root;
-	
-	while (curr != null) {
-		if (curr.left != null) {		// if curr has left children
-			TreeNode prev = curr.left;
-			while (prev.right != null && prev.right != curr) {
-				prev = prev.right;		// find the rightmost node in curr's left subtree
-			}
-			if (prev.right == null) {	// set right to successor, and go to left
-				prev.right = curr;
-				curr = curr.left;
-			} else {					// visit and revert the change, and go to right
-				prev.right = null;
-				list.add(curr.val);
-				curr = curr.right;
-			}
-		} else {						// if curr doesn't have left child, go to right
-			list.add(curr.val);
-			curr = curr.right;
-		}
-	}
-	return list;
-}
-*/
