@@ -1,4 +1,4 @@
-####  Algorithms - Java (223)
+####  Algorithms - Java (225)
 ##### array (35)
 ##### binarysearch (11)
 ##### bit (12)
@@ -9,4 +9,4 @@
 ##### misc (8)
 ##### regex (3)
 ##### string (44)
-##### tree (50)
+##### tree (52)
