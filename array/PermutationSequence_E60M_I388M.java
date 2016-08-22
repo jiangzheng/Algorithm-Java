@@ -56,15 +56,3 @@ public class PermutationSequence_E60M_I388M {
  * Given n and k, return the kth permutation sequence.
  * Note: Given n will be between 1 and 9 inclusive.
  */
-
-/**
- * No need to find out all permutations. We can use the formula:
- * [i_0 i_1 ... i_{n - 1}] is the kth permutation,
- * where k = i_0 * (n - 1)! + i_1 * (n - 2)! + ... + i_{n - 1} * 0!
- * We only need to determine the coefficients i.
- * Example: "123"
- * 4. "231": 4 - 1 = 3 = 1 * 2 + 1 * 1 + 0 * 1
- * 5. "312": 5 - 1 = 4 = 2 * 2 + 0 * 1 + 0 * 1
- * Note: start k from base 0: k--;
- * need to delete the number after adding it to the permutation.
- */
