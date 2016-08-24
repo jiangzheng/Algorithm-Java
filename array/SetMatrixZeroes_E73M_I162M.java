@@ -2,7 +2,8 @@ package array;
 
 public class SetMatrixZeroes_E73M_I162M {
 	/**
-	 * O(mn): new matrix; O(m+n): two arrays storing first row and first column 
+	 * O(mn): new matrix
+	 * O(m+n): two arrays storing first row and first column 
 	 * Time: O(mn), Space: O(1)
 	 */
 	public int[][] setZeroes(int[][] matrix) {
