@@ -11,17 +11,17 @@ public class RotateList_E61M_I170M {
 		}
 		
 		ListNode slow = head, fast = head;	// 2 pointers
-        int length = 0;
-        while (fast != null) {
-            length++;
-            fast = fast.next;
-        }
-        k %= length;	// if k > n, don't have to move more than n times
-        if (k == 0) {
-            return head;
-        }
-        
-        fast = head;
+		int length = 0;
+		while (fast != null) {
+			length++;
+			fast = fast.next;
+		}
+		k %= length;	// if k > n, don't have to move more than n times
+		if (k == 0) {
+			return head;
+		}
+		
+		fast = head;
 		while (fast.next != null) {	// find the kth node from end of list
 			if (k > 0) {
 				k--;	// don't move slow until k = 0, so that eventually the gap b/w slow and fast is k
