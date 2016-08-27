@@ -8,7 +8,7 @@ public class CollatzConjecture_H106E {
 		/* Enter your code here. Read input from STDIN. Print output to STDOUT */
 		Scanner stdin = new Scanner(System.in);
 		String[] numbers = stdin.nextLine().split(" "); // get the input numbers
-	
+		
 		// convert input strings to numbers
 		long N = Long.parseLong(numbers[0]);
 		long K = Long.parseLong(numbers[1]);
