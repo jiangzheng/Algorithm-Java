@@ -15,7 +15,7 @@ public class IntegerToRoman_E12M_I418M {
 
 		StringBuilder sb = new StringBuilder();
 		int i = 0;
-		while (num > 0) {		// from largest to smallest values[i], until 0
+		while (num > 0) {	// from largest to smallest values[i], until 0
 			while (num / values[i] > 0) {	// e.g., 3999 has 3 1000s
 				sb.append(symbols[i]);	// append a symbol
 				num -= values[i];
