@@ -6,9 +6,9 @@ import java.util.List;
 public class GrayCode_E89M_I411M {
 	/**
 	 * Pattern:
-	 * n = 0:                  0
-	 * n = 1:                0 | 1
-	 * n = 2:           00  01 | 11  10
+	 * n = 0:   0
+	 * n = 1:   0 | 1
+	 * n = 2:  00  01 | 11  10
 	 * n = 3: 000 001  011 010 | 110 111  101 100
 	 * ...
 	 * 1st half: add a "0" to the nth bit for the previous level (from left to right)
