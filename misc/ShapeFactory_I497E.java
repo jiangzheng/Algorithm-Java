@@ -69,7 +69,7 @@ public class ShapeFactory_I497E {
  * LintCode #497
  * Factory is a design pattern in common usage. Implement a ShapeFactory that can generate correct shape.
  * You can assume that we have only tree different shapes: Triangle, Square and Rectangle.
- * Example
+ * Example:
  * ShapeFactory sf = new ShapeFactory();
  * Shape shape = sf.getShape("Square");
  * shape.draw();
