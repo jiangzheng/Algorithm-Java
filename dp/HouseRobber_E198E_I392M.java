@@ -28,8 +28,8 @@ public class HouseRobber_E198E_I392M {
 		
 	public static void main(String[] args) {
 		HouseRobber_E198E_I392M obj = new HouseRobber_E198E_I392M();
-		System.out.println(obj.rob(null)); // 0
-		System.out.println(obj.rob(new int[]{})); // 0
+		System.out.println(obj.rob(null))	// 0
+		System.out.println(obj.rob(new int[]{}))	// 0
 		
 		int[] a = {1, 1, 3, 2, 1};
 		System.out.println(obj.rob(a));	// 5
